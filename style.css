@@ -1,80 +1,138 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <title>Tea & Tale</title>
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #faf9f6;
+  line-height: 1.6;
+}
 
 
+.container {
+  width: 90%;
+  max-width: 11100px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.container img{
+position: fixed 20px ;
+width: 50px;
+}
 
 
+header {
+  background-color: #f0ebe3;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-<header>
-  <div class="container">
+header h1 {
+  text-align: center;
+  color: #5a3c1a;
+}
 
-    <h1>Tea & Tale</h1>
-   
-    <nav>
-      <ul>
-        <li><a href="#history">Історія</a></li>
-        <li><a href="#specials">Ексклюзиви</a></li>
-        <li><a href="#team">Команда</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
 
-<section id="history" class="block block-text-center">
-  <div class="container">
-    <h2>Наша Історія</h2>
-    <p>Tea & Tale народився як невеликий сімейний магазин. Тепер ми — один із лідерів ринку якісного чаю.</p>
-  </div>
-</section>
+nav a {
+  text-decoration: none;
+  color: #5a3c1a;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-<section id="specials" class="block block-image-top">
-  <div class="container">
-    <h2>Ексклюзивні Пропозиції</h2>
-<img src="https://cdn.pixabay.com/photo/2022/10/16/19/39/teacup-7526022_1280.jpg"class="retar" >
+nav a:hover {
+  color: #a05a2c;
+}
 
 
+.block {
+  padding: 80px 0;
+}
 
-    <p>Лімітовані колекції для справжніх поціновувачів.</p>
-    <ul>
-      <li>Набір "Гірський аромат"</li>
-      <li>Набір "Весняний квіт"</li>
-      <li>Набір "Східна класика"</li>
-    </ul>
-  </div>
-</section>
+.block h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5a3c1a;
+}
 
-<section id="team" class="block block-cards">
-  <div class="container">
-    <h2>Наша Команда</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Олена" />
-        <h3>Олена</h3>
-        <p>Експерт із якості</p>
-      </div>
-      <div class="card">
-        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Віктор" />
-        <h3>Віктор</h3>
-        <p>Консультант</p>
-      </div>
-      <div class="card">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Наталія" />
-        <h3>Наталія</h3>
-        <p>Підтримка клієнтів</p>
-      </div>
-    </div>
-  </div>
-</section>
+.block-text-center p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Tea & Tale. Всі права захищено.</p>
-  </div>
-</footer>
+.block-image-top img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
 
-</body>
-</html>
+.block-image-top ul {
+  list-style: disc inside;
+  margin-top: 15px;
+}
+
+.block-image-top li {
+  margin: 5px 0;
+}
+
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+
+footer {
+  background-color: #f0ebe3;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+
+  color: #555;
+}
