@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <title>Tea & Tale</title>
+</head>
+<body>
+
+
+
+
+
+<header>
+  <div class="container">
+
+    <h1>Tea & Tale</h1>
+   
+    <nav>
+      <ul>
+        <li><a href="#history">Історія</a></li>
+        <li><a href="#specials">Ексклюзиви</a></li>
+        <li><a href="#team">Команда</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="history" class="block block-text-center">
+  <div class="container">
+    <h2>Наша Історія</h2>
+    <p>Tea & Tale народився як невеликий сімейний магазин. Тепер ми — один із лідерів ринку якісного чаю.</p>
+  </div>
+</section>
+
+<section id="specials" class="block block-image-top">
+  <div class="container">
+    <h2>Ексклюзивні Пропозиції</h2>
+<img src="https://cdn.pixabay.com/photo/2022/10/16/19/39/teacup-7526022_1280.jpg"class="retar" >
+
+
+
+    <p>Лімітовані колекції для справжніх поціновувачів.</p>
+    <ul>
+      <li>Набір "Гірський аромат"</li>
+      <li>Набір "Весняний квіт"</li>
+      <li>Набір "Східна класика"</li>
+    </ul>
+  </div>
+</section>
+
+<section id="team" class="block block-cards">
+  <div class="container">
+    <h2>Наша Команда</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Олена" />
+        <h3>Олена</h3>
+        <p>Експерт із якості</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Віктор" />
+        <h3>Віктор</h3>
+        <p>Консультант</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Наталія" />
+        <h3>Наталія</h3>
+        <p>Підтримка клієнтів</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Tea & Tale. Всі права захищено.</p>
+  </div>
+</footer>
+
+</body>
+</html>
